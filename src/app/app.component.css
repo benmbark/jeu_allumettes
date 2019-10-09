@@ -1,7 +1,10 @@
 .alumettes{
-    max-width: 500px;
-    min-width: 300px;
     display: inline-block;
+    text-align: left;
+    margin-top: 20px;
+    width: 500px;
+    min-height: 150px;
+    
 }
 
 .alumettes > img{

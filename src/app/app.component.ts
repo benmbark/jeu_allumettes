@@ -16,9 +16,6 @@ export class AppComponent {
     this.tour = Math.random() >= 0.5;
     this.lenght =  Math.floor(Math.random() * (this.maxLen - this.minLen + 1) + this.minLen);
   }
-  ngOnIntit(){
-   
-  }
 
   enlever(number:number){
 
@@ -30,6 +27,5 @@ export class AppComponent {
     }
 
   }
-  
-
+ 
 }
