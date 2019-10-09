@@ -6,5 +6,30 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'jeuAlumettes';
+  title = 'allumettes';
+  lenght : number = 10
+  minLen: number= 10
+  maxLen: number= 40
+  tour : boolean
+
+  constructor(){
+    this.tour = Math.random() >= 0.5;
+    this.lenght =  Math.floor(Math.random() * (this.maxLen - this.minLen + 1) + this.minLen);
+  }
+  ngOnIntit(){
+   
+  }
+
+  enlever(number:number){
+
+    if(number <= this.lenght){
+      this.lenght = this.lenght - number
+      this.tour = !this.tour}
+    else{
+      alert("Impossible d'effectuer l'operation")
+    }
+
+  }
+  
+
 }

@@ -1,0 +1,9 @@
+.alumettes{
+    display: inline-block;
+}
+
+.alumettes > img{
+    width: 30px;
+    height: auto;
+    display: inline;
+}
